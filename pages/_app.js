@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <GlobalProvider>
         <Navbar />
-        <Publicidad/>
+        <Publicidad class="banner--top--desktop"/>
         <Component {...pageProps} />
         <Footer />
       </GlobalProvider>

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Publicidad = () => {
+const Publicidad = (props) => {
     return ( <>
     
-    <div class="banner--top--desktop"></div>
+    <div className={props.class}></div>
     
     </> );
 }

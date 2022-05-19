@@ -8,15 +8,16 @@ const Footer = () => {
             <div className='footer'>
 
                 <div className='footer-header'>
-                    <section class="col-12 col-desksm-4 col-desk-3 footer-header__redes">
+                    <section class="footer-header-redes" >
                         <a href="https://www.facebook.com/lanacion" target="_blank"><i class="icon-facebook"></i></a>
                         <a href="https://twitter.com/LANACION" target="_blank"><i class="icon-twitter"></i></a>
                         <a href="https://www.instagram.com/lanacioncom/" target="_blank"><i class="icon-instagram"></i></a>
                         <a href="http://servicios.lanacion.com.ar/herramientas/rss/ayuda" target="_blank"><i class="icon-rss"></i></a>
                     </section>
-
-                    <img src="/images/logo.png" style={{ width: "100px", flex: "1 1 20rem",  position: "relative", order: "2",     justifycontent: "center",  flex: "0 0 33.33333%", maxwidth: "33.33333%"}}></img>
-                    <section class="col-12 col-desksm-4 col-desk-3 footer-header__app" style={{order: "3"}}>
+                    <div className='footer-header-logo'>
+                        <img src="/images/logo.png" style={{ width: "100px", flex: "1 1 20rem", position: "relative", order: "2", justifycontent: "center", flex: "0 0 33.33333%", maxwidth: "33.33333%" }}></img>
+                    </div>
+                    <section class="col-12 col-desksm-4 col-desk-3 footer-header__app" style={{ order: "3" }}>
                         <a href="https://play.google.com/store/apps/details?id=app.lanacion.activity&amp;hl=es_419" target="_blank" class="app_play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="120" height="35" viewBox="0 0 120 35">
                                 <defs>
@@ -88,7 +89,7 @@ const Footer = () => {
                 </div>
 
                 <div className='footer-sitio'>
-                    <section class="col-desksm-9 col-deskxl-8 footer-sitio__links">
+                    <section class="footer-sitio-links">
                         <a href="http://especiales.lanacion.com.ar/varios/mapa-sitio/index.html" class="item_link">Mapa del sitio</a>
                         <a href="https://micuenta.lanacion.com.ar/ayuda" class="item_link">Ayuda</a>
                         <a href="https://micuenta.lanacion.com.ar/tyc" class="item_link">Términos y condiciones</a>
@@ -96,16 +97,13 @@ const Footer = () => {
                         <a href="https://suscripciones.lanacion.com.ar/suscribirme/" class="item_link">Suscribirse al diario impreso</a>
                     </section>
 
+                    <p className='footer-captcha'>Protegido por re CAPTCHA: <a href="https://policies.google.com/terms?hl=es-419" target="_blank" class="condition">Condiciones</a> <a href="https://policies.google.com/privacy?hl=es-419" target="_blank" class="private">Privacidad</a></p>
+
                 </div>
 
                 <div className='footer-copyright'>
+                    <p className='reserved'>Copyright 2019 SA LA NACION | Todos los derechos reservados</p>
 
-                    <section class="col-desksm-6 col-desk-6 footer-copyright__fiscal">
-                        <p><img src="https://static.glanacion.com/v2/ln/img/gda.jpg" alt="gda" class="img_gda" /> Miembro de GDA. Grupo de Diarios América <a href="https://serviciosweb.afip.gob.ar/clavefiscal/qr/publicInfoD.aspx" target="_blank"><img src="https://static.glanacion.com/v2/ln/img/data.jpg" alt="Data fiscal" class="img_data-fiscal" /></a></p>
-                    </section>
-                    <section class="col-desksm-6 col-desk-6 footer-copyright__reserved">
-                        <p>Copyright 2019 SA LA NACION | Todos los derechos reservados</p>
-                    </section>
                 </div>
             </div>
         </>
