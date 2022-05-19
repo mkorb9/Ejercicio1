@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Publicidad = () => {
-    return ( <></> );
+    return ( <>
+    
+    <div class="banner--top--desktop"></div>
+    
+    </> );
 }
  
 export default Publicidad;
