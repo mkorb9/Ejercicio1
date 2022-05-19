@@ -3,7 +3,9 @@ import React from 'react';
 const Titulo = () => {
   return (
     <>
-      <h1 className='titulo'>Acumulado Grilla</h1>
+      <div style={{width: "100%"}}>
+        <h1 className='titulo'>Acumulado Grilla</h1>
+      </div>
     </>
   )
 }

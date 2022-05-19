@@ -16,14 +16,19 @@ const List = () => {
     },[articles])
 
     return(
-        <>
+        <div style={{ 
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr 1fr",
+                gridColumnGap: "2,5em",
+                gridRowGap: "2.5em"
+            }}>
             {
                 articles7.map(art => 
                     <Tarjeta article={art} key={art._id}/>
 
                 )
             }
-        </>
+        </ div>
     )
 }
 
